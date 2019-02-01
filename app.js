@@ -45,7 +45,16 @@ class UI {
 //Store Class (handles storage)
 
 //Event to display books
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
 //Event to add a book
+document.querySelector('#book-form').addEventListener('submit', (e) => {
+  //get form values
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
+  const isbn = document.querySelector('#isbn').value;
+
+  
+});
 
 //Event to remove a book
